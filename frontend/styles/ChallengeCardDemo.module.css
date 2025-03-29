@@ -1,0 +1,76 @@
+.container {
+  min-height: 100vh;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #64748b;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.cardWrapper {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .main {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+} 

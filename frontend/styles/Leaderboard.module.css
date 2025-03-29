@@ -1,0 +1,49 @@
+.container {
+  padding: 1rem 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  font-size: 0.9rem;
+  min-width: 250px;
+}
+
+.leaderboard {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search {
+    min-width: unset;
+    width: 100%;
+  }
+} 

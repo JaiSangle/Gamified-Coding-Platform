@@ -1,0 +1,170 @@
+/* ChallengeCard Container */
+.challengeCard {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.challengeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.cardHeader {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+
+/* Difficulty styling for header */
+.easy {
+  background-color: #f0f9ff;
+  border-left: 5px solid #4299e1;
+}
+
+.medium {
+  background-color: #fffbeb;
+  border-left: 5px solid #f59e0b;
+}
+
+.hard {
+  background-color: #fef2f2;
+  border-left: 5px solid #ef4444;
+}
+
+/* Card Title */
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  padding-right: 10px;
+}
+
+/* Difficulty Badge */
+.difficultyBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.easyBadge {
+  background-color: #4299e1;
+  color: white;
+}
+
+.mediumBadge {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.hardBadge {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Card Content */
+.cardContent {
+  padding: 20px 24px;
+  flex-grow: 1;
+}
+
+.description {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Card Footer */
+.cardFooter {
+  padding: 16px 24px 20px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Start Button */
+.startButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.startButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.startButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardTitle {
+    margin-bottom: 10px;
+    padding-right: 0;
+  }
+  
+  .difficultyBadge {
+    align-self: flex-start;
+  }
+  
+  .cardFooter {
+    justify-content: center;
+  }
+  
+  .startButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardHeader, 
+  .cardContent, 
+  .cardFooter {
+    padding: 16px;
+  }
+  
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+} 
